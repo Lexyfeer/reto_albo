@@ -5,6 +5,46 @@
   min-height: 100vh;
 }
 
+.containerFilms {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  width: 90%;
+  justify-content: space-between;
+}
+
+.cardContainer {
+  display: flex;
+  margin: 1rem 0;
+}
+
+.card {
+  width: 18rem;
+  color: black;
+}
+
+.card-img-top {
+  height: 20rem;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.module {
+  margin: 0 0 1rem 0;
+  overflow: hidden;
+  text-align: justify;
+}
+
+.lineClamp {
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -30,6 +70,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
