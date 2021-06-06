@@ -3,6 +3,7 @@ import axios from 'axios';
 import { useSelector, useDispatch } from 'react-redux';
 import { getFilms } from '../redux/actions/filmsActions';
 import Film from './Film';
+import { MY_API_KEY } from '../config';
 
 const AllFilms = () => {
   const films = useSelector((film) => film);
@@ -15,7 +16,7 @@ const AllFilms = () => {
       url: 'https://imdb8.p.rapidapi.com/title/get-news',
       params: { tconst: 'tt0944947', limit: '28' },
       headers: {
-        'x-rapidapi-key': '8a7abe1ec5mshdcf23905d96b22cp1cb823jsndf9c3f12526d',
+        'x-rapidapi-key': MY_API_KEY,
         'x-rapidapi-host': 'imdb8.p.rapidapi.com'
       }
     };
