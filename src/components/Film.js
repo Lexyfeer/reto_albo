@@ -1,5 +1,5 @@
 import React from 'react';
-import { useSelector } from 'react-redux';
+import { connect, useSelector } from 'react-redux';
 
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
@@ -35,4 +35,4 @@ const Film = () => {
   );
 };
 
-export default Film;
+export default connect()(Film);

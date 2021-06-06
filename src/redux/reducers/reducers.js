@@ -1,8 +1,8 @@
 import { combineReducers } from 'redux';
-import { filmsReducer } from './filmsReducers';
+import { newsFilmsReducer } from './newsFilmsReducer';
 
 const reducers = combineReducers({
-  allFilms: filmsReducer,
+  allFilms: newsFilmsReducer,
 });
 
 export default reducers;

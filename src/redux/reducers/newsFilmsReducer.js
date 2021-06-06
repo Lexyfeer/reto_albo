@@ -3,9 +3,9 @@ const initialState = {
 };
 
 
-export const filmsReducer = (state = initialState, action) => {
+export const newsFilmsReducer = (state = initialState, action) => {
   switch (action.type) {
-    case 'GET_ALL_FILMS':
+    case 'GET_FILM_NEWS':
       return { ...state, films: action.payload };
 
     default:
