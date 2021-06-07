@@ -14,7 +14,7 @@ const AllFilms = () => {
     const options = {
       method: 'GET',
       url: 'https://imdb8.p.rapidapi.com/title/get-news',
-      params: { tconst: 'tt0944947', limit: '28' },
+      params: { tconst: 'tt0944947', limit: '8' },
       headers: {
         'x-rapidapi-key': MY_API_KEY,
         'x-rapidapi-host': 'imdb8.p.rapidapi.com'
@@ -34,7 +34,7 @@ const AllFilms = () => {
     fetchFilms();
   }, []);
 
-  console.log('All FILMS', films);
+  // console.log('All FILMS', films);
   return (
     <div>
       <h2>Espectáculos</h2>
