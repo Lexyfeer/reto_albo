@@ -1,12 +1,12 @@
 import React, { useEffect } from 'react';
 import axios from 'axios';
-import { useSelector, useDispatch } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import { getFilms } from '../redux/actions/filmsActions';
 import Film from './Film';
 import { MY_API_KEY } from '../config';
 
 const AllFilms = () => {
-  const films = useSelector((film) => film);
+  // const films = useSelector((film) => film);
   const dispatch = useDispatch();
 
   const fetchFilms = async () => {
@@ -37,7 +37,7 @@ const AllFilms = () => {
   // console.log('All FILMS', films);
   return (
     <div>
-      <h2>Espectáculos</h2>
+      <h2>Mira Aquí Algunas Noticias Sobre Lo Más Destacado De Los Espectáculos</h2>
       <Film />
     </div>
   );
