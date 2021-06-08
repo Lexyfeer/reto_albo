@@ -18,6 +18,7 @@ El sitio tiene una carpeta principal llamada 'src' que contiene las siguientes c
 - 'components' : (tiene todos los componentes que se usan dentro de la aplicación).
 - 'redux' : (contiene la carpeta actions, reducers y la store) que se necesitan para el manejo de estados dentro de nuestra webApp.
 
+![image](https://user-images.githubusercontent.com/47005949/121105987-c0fc1800-c7ca-11eb-96f0-b34fc49c0b25.png)
 
 Tenemos un archivo principal que es el de index.js es el que provee nuestro componente App (que contiene toda nuestra aplicación), que a su vez tiene dentro 2 componentes AllFilms y AllPosts dentro de AllPosts se muestra el componente PostForm y Post.
   * AllFilms: Realiza una llamada get a la API para mostrar todas las películas mediante el componente (Film.js) 
