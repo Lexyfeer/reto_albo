@@ -7,7 +7,7 @@ import Post from './Post';
 const AllPosts = () => {
 
   return (
-    <div className='containerFilms col-md-12'>
+    <div className='containerPosts col-md-12'>
       <h1>Comentarios</h1>
       <p>Aquí puedes agregar tú opinión o comentario sobre alguna de las notas que estas leyendo.</p>
       <PostForm />
